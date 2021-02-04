@@ -36,8 +36,8 @@ const allowedOrigins = [
   'http://probox.lk',
   'http://kumi.lk',
   'https://kumi.lk',
-  'http://www.siraads.com',
-  'https://www.siraads.com',
+  'http://siraads.com',
+  'https://siraads.com',
   'https://adv.codetechasia.com',
 ];
 
