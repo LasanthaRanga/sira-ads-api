@@ -36,8 +36,9 @@ const allowedOrigins = [
   'http://probox.lk',
   'http://kumi.lk',
   'https://kumi.lk',
+  'http://www.siraads.com',
+  'https://www.siraads.com',
   'https://adv.codetechasia.com',
-
 ];
 
 // Reflect the origin if it's in the allowed list or not defined (cURL, Postman, etc.)

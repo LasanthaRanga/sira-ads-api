@@ -82,24 +82,7 @@ exports.signUp = (req, res, next) => {
             (error, rows, fildData) => {         
                 let uid = rows.insertId;           
                 if (!error) {
-                    mycon.execute("SELECT tree.idTree,tree.parent,tree.layer,tree.userId,tree.`status` FROM tree WHERE tree.idTree=" + req.body.ref, (e, r, f) => {
-                        if (!e) {
-                            let l = r[0].layer;
-                            l = l + 1;
-                            mycon.execute("INSERT INTO  `tree` (  `parent`, `layer`, `userId`, `status`, `created`) " +
-                                " VALUES	(" + req.body.ref + ", " + l + ", " + uid + ", 0, '" + day + "' );", (ee, rr, ff) => {
-                                    if (!ee) {
-                                        res.send(rows);
-                                    } else {
-                                        console.log(ee);
-                                        res.status(500).send(ee);
-                                    }
-                                });
-                        } else {
-                            console.log(e);
-                            res.status(500).send(e);
-                        }
-                    });
+                    res.send(rows);                  
 
                 } else {
                     console.log(error);

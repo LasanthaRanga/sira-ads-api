@@ -4,7 +4,7 @@
         "host": "localhost",
         "user": "root",
         "password": "root",
-        "database": "kumi",
+        "database": "siraads",
         "sendby": "coopshopapp@gmail.com",
         "sendbypass": "Lasa2012"     
     }
